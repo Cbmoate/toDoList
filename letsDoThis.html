@@ -5,41 +5,38 @@
 
   <title></title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/paper/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 
 <body>
-  <div class="container-fluid">
-    <div class="row-fluid">
+
+  <div class="container">
+    <div class="row">
       <div class="col-md-3">
         <form class="form-inline">
           <div class="form-group">
-            <input type="text" class="form-control" id="newThing" placeholder="What do you need to get done?" autocomplete="off"/>
+            <input type="text" class="form-control" id="newThing" placeholder="What do you need to do?" autocomplete=/>
           </div>
-          <button type="submit"></button>
+          <button type="submit" class="btn btn-primary">add</button>
         </form>
       </div>
-
-
       <div class="col-md-9">
-        <table class="bordered">
+        <table class="table-bordered ">
             <thead>
               <tr>
-                <th colspan="2">Let's get this done</th>
+                <th colspan="6">Let's get this done</th>
               </tr>
             </thead>
-            <tbody>              
-            </tbody>
-        </table>
-        
+            <tbody></tbody>
+        </table>        
       </div>
-      
     </div>
   </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src= "java/buttons.js"></script>
-
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--<script type="text/javascript" src= "java/buttons.js"></script>-->
+  <script type="text/javascript" src="java/shamoon.js"></script>
 </body>
 </html>
