@@ -18,8 +18,6 @@ $(document).ready(function() {
 
   //Make the check box check things
   $(document).on("click", ".doneBox", function(){
- 
-
     if($(this).prop("checked") === true){
       $(this).parent().attr("class", "done");
     }

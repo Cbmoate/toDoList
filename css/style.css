@@ -4,7 +4,7 @@
 
 .btn-danger{
   margin-left: 10px;
-  align-content: right;
+  float: right;
 }
 
 input[type="checkbox"]{
