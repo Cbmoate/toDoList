@@ -1,8 +1,9 @@
 $(document).ready(function() {
-  $(document).on("click", ".btn-danger", function(){
-    $(this).parent().parent().remove;
-  });
-
+  //make delete buttons delete things
+  $(document).on("click",".btn-danger", function(){
+    $(this).parent().parent().remove();
+      });
+ //add new info and buttons to the list
   $(".btn-primary").on("click", function(e) {
     e.preventDefault();
     var newThing = $("#newThing").val().trim();
@@ -14,15 +15,16 @@ $(document).ready(function() {
     $("tbody").append(newRow);
     $("#newThing").val("").focus();
   }); 
+
+  //Make the check box check things
   $(document).on("click", ".doneBox", function(){
-    var status = $(this).attr("data-state");
-    if (status === "not-checked"){
-      $(this).parent().attr("class", "str");
-      $(this).attr("data-state", "checked")
+ 
+
+    if($(this).prop("checked") === true){
+      $(this).parent().attr("class", "done");
     }
     else{
       $(this).parent().removeClass();
-      $(this).attr("data-state", "not-checked");
     }
   });
 });

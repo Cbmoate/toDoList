@@ -1,0 +1,16 @@
+.btn-primary{
+  margin-left: 15px;
+}
+
+.btn-danger{
+  margin-left: 10px;
+  align-content: right;
+}
+
+input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+.done{
+  text-decoration: line-through;
+}
