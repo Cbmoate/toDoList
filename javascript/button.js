@@ -10,8 +10,11 @@ $(document).ready(function() {
     var deleteBtn = $("<button>").addClass("btn btn-danger").append("Delete");
     var doneBox = $("<input>").attr("type", "checkbox").attr("class", "doneBox").attr("data-state", "not-checked");
     var toDoThis = $("<td>").addClass("word-td").append(newThing).append(deleteBtn).prepend(doneBox)
+    //adds a new row
     newRow.append(toDoThis);
+    //adds new row to the table
     $("tbody").append(newRow);
+    //moves focus back up to the text input after you add an item to the list
     $("#listItem").val("").focus();
   }); 
 
@@ -26,8 +29,8 @@ $(document).ready(function() {
   });
 
   //make delete buttons delete things
-  $(document).on("click",".btn-danger", function(){
-    $(this).parent().parent().remove()
+  $(document).on("click", ".btn-danger", function(){
+    $(this).parent().parent().remove();
   });
 
 });
